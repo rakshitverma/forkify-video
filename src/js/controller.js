@@ -99,3 +99,12 @@ const init = function () {
 };
 
 init();
+
+// test-fraction.js
+import { Fraction } from 'fractional';
+
+const testFraction = new Fraction(1, 2);
+console.log(testFraction.toString()); // Should output "1/2"
+
+const testFractionFromString = new Fraction('1 1/2');
+console.log(testFractionFromString.toString()); // Should output "3/2"
